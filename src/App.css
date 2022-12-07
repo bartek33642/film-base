@@ -1,0 +1,115 @@
+.footer {
+  width: 100%;
+  height: 25px;
+  background-color: #444444;
+  color: #ffffff;
+  bottom: 0;
+  position: relative;
+}
+.p-footer{
+  margin-left: 42%;
+  margin-right: 42%;
+}
+
+.logo {
+  color: whitesmoke;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.input-group {
+  width: 80%;
+  margin-left: 10px;
+}
+
+.form-navbar {
+  width: 50%;
+  border: none;
+  border-radius: 10px;
+  margin-top: 50px;
+  height: 30px;
+  font-size: 15px;
+}
+
+ .navbar-section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+/* .login-registration{
+  align-self: flex-end;
+
+ } */
+
+/* .loginBtn {
+  align-self: flex-end;
+
+ }  */
+ .buttons{
+  
+ }
+ 
+
+.top-side {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #444444;
+}
+
+.movie-section {
+  width: 90%;
+  margin: auto;
+  background-color: #292929;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.App {
+  background-color: #292929;
+}
+.movie-section-title {
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.movie-section-img {
+  margin: 20px;
+}
+
+.movie-section-title-desc {
+  padding: 20px;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.movie-section-grade {
+  margin: 10px;
+  font-size: 20px;
+}
+
+#star-img {
+  width: 14px;
+  height: 14px;
+}
+.card{
+  max-width: 540px;
+  align-self: center;
+  margin-top: 10px;
+}
+.noLink{
+  text-decoration: none;
+  color: #ffff;
+}
+
+button {
+  border: none;
+  background: none;
+  color: white;
+  margin-left: 10%;
+}
