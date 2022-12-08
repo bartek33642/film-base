@@ -1,4 +1,4 @@
-## View App
+## App
 ![Header and content](https://github.com/bartek33642/film-base/blob/develop/src/assets/pics/first.png?raw=true)
 ![Footer and content](https://github.com/bartek33642/film-base/blob/develop/src/assets/pics/second.png?raw=true)
 
