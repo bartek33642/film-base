@@ -1,9 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.js';
 
-
-const MovieSection = ({imgPath, title, description, casts, genre, grade, year}) => {
+const Movies = ({imgPath, title, description, casts, genre, grade, year, star}) => {
 
   return (
 
@@ -16,8 +14,8 @@ const MovieSection = ({imgPath, title, description, casts, genre, grade, year}) 
     <div className="col-md-8">
       <div className="card-body">
             <h5 className="card-title">{title}</h5>
-            <p className="card-text"><small class="text-muted">{grade}</small></p>
-            <p className="card-text">{description}</p>
+            <p className="card-text"><small class="text-muted"><img src={star} id="starRate" alt='star'/>  {grade}</small></p>
+            <p className="card-text">{description}</p> 
             <p className="card-text"><small class="text-muted"><b>Obsada:</b> {casts}</small></p>
             <p className="card-text"><small class="text-muted"><b>Gatunek:</b> {genre}</small></p>
             <p className="card-text"><small class="text-muted"><b>Rok:</b> {year}</small></p>
@@ -30,4 +28,4 @@ const MovieSection = ({imgPath, title, description, casts, genre, grade, year}) 
   )
 }
 
-export default MovieSection;
+export default Movies;
