@@ -1,6 +1,6 @@
 ## App
-![Header and content](https://github.com/bartek33642/film-base/blob/develop/src/prewiew/first.png?raw=true)
-![Footer and content](https://github.com/bartek33642/film-base/blob/develop/src/prewiew/second.png?raw=true)
+![Header and content](https://github.com/bartek33642/film-base/blob/develop/src/preview/first.png?raw=true)
+![Footer and content](https://github.com/bartek33642/film-base/blob/develop/src/preview/second.png?raw=true)
 
 
 # Getting Started with Create React App
