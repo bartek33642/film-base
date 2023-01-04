@@ -1,21 +1,21 @@
 import './App.css';
-import Footer from './components/Footer';
-import Logo from './components/Logo';
 import Navbar from './components/Navbar';
 import Movies from './components/Movies';
+import Footer from './components/Footer';
 
 function App() {
-
   const movies = [
     {
       title: "Forrest Gump",
       imgPath: "https://fwcdn.pl/fpo/09/98/998/8021615.3.jpg",
       description: "Historia życia Forresta, chłopca o niskim ilorazie inteligencji z niedowładem kończyn, który staje się miliarderem i bohaterem wojny w Wietnamie.",
       genre: "Dramat, Komedia",
-      casts: "Tom Hanks, Robin Wright, Sally Field, Gary Sinse, Mykelti Williamson",
+      casts: "Tom Hanks, Robin Wright, Sally Field, Gary Sinise, Mykelti Williamson",
       grade: "9/10",
       year: "1994",
       star: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpurepng.com%2Fpublic%2Fuploads%2Flarge%2Fpurepng.com-black-starstargeometricallydecagonconcavestardomclipartblack-1421526502766dkgv4.png&f=1&nofb=1&ipt=119d395e93cef9b1e6efe711536373b9beb8e6b773605c1fed473c4483fa7977&ipo=images",
+      comments: "ciekawa fabuła i w ogóle sam pomysł na film",
+      budget: '$55 000 000',
     },
     {
       title: "Pianista",
@@ -26,6 +26,8 @@ function App() {
       grade: "8/10",
       year: "2002",
       star: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpurepng.com%2Fpublic%2Fuploads%2Flarge%2Fpurepng.com-black-starstargeometricallydecagonconcavestardomclipartblack-1421526502766dkgv4.png&f=1&nofb=1&ipt=119d395e93cef9b1e6efe711536373b9beb8e6b773605c1fed473c4483fa7977&ipo=images",
+      comments: "ciekawy film",
+      budget: '$35 000 000',
     },
     {
       title: "Interstellar",
@@ -36,6 +38,8 @@ function App() {
       grade: "8/10",
       year: "2014",
       star: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpurepng.com%2Fpublic%2Fuploads%2Flarge%2Fpurepng.com-black-starstargeometricallydecagonconcavestardomclipartblack-1421526502766dkgv4.png&f=1&nofb=1&ipt=119d395e93cef9b1e6efe711536373b9beb8e6b773605c1fed473c4483fa7977&ipo=images",
+      comments: "Film mógłby zostać bardziej dopracowany",
+      budget: '$165 000 000',
     },
     {
       title: "Skazani na Shawshank",
@@ -46,22 +50,23 @@ function App() {
       grade: "8/10",
       year: "1994",
       star: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpurepng.com%2Fpublic%2Fuploads%2Flarge%2Fpurepng.com-black-starstargeometricallydecagonconcavestardomclipartblack-1421526502766dkgv4.png&f=1&nofb=1&ipt=119d395e93cef9b1e6efe711536373b9beb8e6b773605c1fed473c4483fa7977&ipo=images",
+      comments: "Interesujący film, dobra reżyseria",
+      budget: '$25 000 000',
     }
   ]
 
   return (
-
-    <div className="App">
-      <div className='top-side'>
-    <Logo />
-        <Navbar />
-      </div>
-      <div className='movie-section-fill'>
+    <div className='content'>
+      <>
+      <Navbar />
+      <div className=''>
         {movies.map((movie) => <Movies imgPath={movie.imgPath} title={movie.title} description={movie.description} genre={movie.genre} casts={movie.casts} grade={movie.grade} year={movie.year} star={movie.star}/> )}
       </div>
-      <Footer/>
-      
-    </div>
+
+
+      <Footer />
+      </>
+      </div>
   );
 }
 

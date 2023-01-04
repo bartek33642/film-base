@@ -1,0 +1,134 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #292929;
+}
+#nav-color{
+    background-color: #444444;
+}
+li{
+    list-style-type: none;  
+}
+#login{
+    background-color: none;
+    color: #fff;
+    text-align: center;
+    border: 20px;
+
+}
+#register{
+    background-color: none;
+    color: #fff;
+    text-align: center;
+    border: 20px;
+    margin-top: 10px;
+
+}
+#login, #register{
+    margin-left: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: 25px;
+    background-color: #444444;
+    color: #ffffff;
+    bottom: 0;
+    position: relative;
+  }
+  .p-footer{
+    text-align: center;
+  }
+  #starRate {
+    width: 14px;
+    height: 14px;
+  }
+  .card{
+    max-width: 800px;
+    align-self: center;
+    margin-top: 10px;
+  }
+  .card-text {
+    text-align: justify;
+  }
+
+  .movie-section {
+    width: 90%;
+    margin: auto;
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+  }
+  
+  .movie-section-img {
+    margin: 20px;
+  }
+  
+  .movie-section-title-desc {
+    padding: 20px;
+    font-size: 28px;
+    margin-top: 10px;
+  }
+
+  #logo-name{
+    color: #fff;
+    font-size: 25px;
+  }
+
+  #search-bar{
+    width: 400px;
+    border-radius: 12px;
+  }
+
+  .Login-view{
+    color: #fff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+  }
+
+  #register-view{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+  }
+.button-404{
+    border-radius: 5px;
+}
+.button-404-text{
+  text-decoration: none;
+  color: #000000;
+  }
+  .view-404{
+    text-align: center;
+    margin-top: 300px;
+  }
+  .view-404 h2{
+    color: #ffffff;
+  }
+  .view-404 h1{
+    color: #ffffff;
+  }
+
+  .button-movies{
+    border: none;
+    border-radius: 5px;
+  }
+  .button-movies-text{
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .add-view h1{
+    color: #fff;
+  }
+  .details-view h1{
+    color: #fff;
+  }
+
+  #nav-view{
+    color: #fff;
+  }

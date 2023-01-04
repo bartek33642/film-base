@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 const Movies = ({imgPath, title, description, casts, genre, grade, year, star}) => {
 
@@ -19,7 +20,9 @@ const Movies = ({imgPath, title, description, casts, genre, grade, year, star}) 
             <p className="card-text"><small class="text-muted"><b>Obsada:</b> {casts}</small></p>
             <p className="card-text"><small class="text-muted"><b>Gatunek:</b> {genre}</small></p>
             <p className="card-text"><small class="text-muted"><b>Rok:</b> {year}</small></p>
-
+            <div> 
+              <button type='button' className="button-movies"><Link to='/moviedetails' className="button-movies-text">Szczegóły filmu</Link></button>
+            </div>
       </div>
     </div>
   </div>

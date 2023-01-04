@@ -1,8 +1,3 @@
-## App
-![Header and content](https://github.com/bartek33642/film-base/blob/develop/src/preview/first.png?raw=true)
-![Footer and content](https://github.com/bartek33642/film-base/blob/develop/src/preview/second.png?raw=true)
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
