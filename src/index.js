@@ -23,9 +23,8 @@ root.render(
               <Route path="login" element={<Login/>}/>
               <Route path="register" element={<Register/>}/>
               <Route path="add" element={<Add/>}/>
-              <Route path={"moviedetails"} element={<Details/>}/>
+              <Route path={"/moviedetail/:id"} element={<Details/>}/>
               <Route path='*' element={<NotFound />}/>
-
           </Routes>
        </BrowserRouter>
 
