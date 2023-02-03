@@ -9,10 +9,12 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  Navigate,
 } from "react-router-dom";
 import Details from './components/Details';
 import Add from './components/Add';
 import NotFound from './components/NotFound';
+import { isExpired } from 'react-jwt';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,7 +24,12 @@ root.render(
               <Route path="/" element={<App/>}/>
               <Route path="login" element={<Login/>}/>
               <Route path="register" element={<Register/>}/>
-              <Route path="add" element={<Add/>}/>
+              <Route path="add" element={
+                isExpired(localStorage.getItem("token")) ? (
+                <Navigate replace to='/' /> 
+                ) : ( <Add/>)
+              
+              }/>
               <Route path={"/moviedetail/:id"} element={<Details/>}/>
               <Route path='*' element={<NotFound />}/>
           </Routes>

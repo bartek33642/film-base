@@ -58,16 +58,14 @@ const Navbar = (props) => {
           )}
         </div>
         </div>
-       {!isNotLog && (
-          <li className="nav-item">
-            <Link className="nav-link" onClick={logOut} style={{color:"white"}}>
-              Wyloguj
-            </Link>
-            <Link className="nav-link" to="/add" style={{color:"white"}}> Dodaj film</Link> 
-            </li>
-        )} 
-
-
+      {!isNotLog && (
+        <li className="nav-item">
+          <Link className="nav-link" onClick={logOut} style={{ color: "white" }}>
+            Wyloguj
+          </Link>
+          {isNotLog ? null : <Link className="nav-link" to="/add" style={{ color: "white" }}> Dodaj film</Link>}
+        </li>
+      )} 
     </nav>
   );
 };
